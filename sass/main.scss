@@ -21,6 +21,7 @@ $color-primary-dark: #28b485;
 $color-grey-dark: #333;
 $color-grey-light: #777;
 $color-white: #fff;
+$color-black: #000;
 
 *,
 *::after,
@@ -58,24 +59,24 @@ body {
   position: relative;
 
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-}
 
-.header__logo-box {
-  position: absolute;
-  top: 4rem;
-  left: 4rem;
-}
+  &__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+  }
 
-.header__logo-img {
-  height: 3.5rem;
-}
+  &__logo-img {
+    height: 3.5rem;
+  }
 
-.header__text-box {
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
+  &__text-box {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
 }
 
 .heading-primary {
@@ -85,37 +86,37 @@ body {
 
   /* Animation shaking fix */
   backface-visibility: hidden;
-}
 
-.heading-primary--main {
-  display: block;
-  font-size: 6rem;
-  font-weight: 400;
-  letter-spacing: 3.5rem;
+  &--main {
+    display: block;
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: 3.5rem;
 
-  animation: moveInLeft 0.5s ease-out;
+    animation: moveInLeft 0.5s ease-out;
 
-  /* animation-name: moveInLeft;
-  animation-duration: 0.5s;
-  animation-timing-function: ease-out; */
+    /* animation-name: moveInLeft;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out; */
 
-  /* 
-  animation-delay: 1s;
-  animation-iteration-count: 3; 
-  */
-}
+    /* 
+    animation-delay: 1s;
+    animation-iteration-count: 3; 
+    */
+  }
 
-.heading-primary--sub {
-  display: block;
-  font-size: 2rem;
-  font-weight: 700;
-  letter-spacing: 1.74rem;
+  &--sub {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1.74rem;
 
-  animation: moveInRight 0.5s ease-out;
+    animation: moveInRight 0.5s ease-out;
 
-  /* animation-name: moveInRight;
-  animation-duration: 0.5s;
-  animation-timing-function: ease-out; */
+    /* animation-name: moveInRight;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out; */
+  }
 }
 
 @keyframes moveInLeft {
@@ -166,56 +167,56 @@ body {
   }
 }
 
-.btn:link,
-.btn:visited {
-  display: inline-block;
-  text-transform: uppercase;
-  text-decoration: none;
-  transition: transform 0.2s ease-out;
-  box-shadow: 0 0.8rem 1.6rem rgba(0, 0, 0, 0.2);
-  position: relative;
-}
+.btn {
+  &:link,
+  &:visited {
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: transform 0.2s ease-out;
+    box-shadow: 0 0.8rem 1.6rem rgba($color-black, 0.2);
+    position: relative;
+    padding: 1.4rem 3.2rem;
+    border-radius: 10rem;
+  }
 
-.btn:hover {
-  transform: translateY(-0.3rem);
-  box-shadow: 0 1.2rem 2.4rem rgba(0, 0, 0, 0.2);
-}
+  &:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1.2rem 2.4rem rgba($color-black, 0.2);
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+  }
 
-.btn:active {
-  transform: translateY(0.1rem);
-  box-shadow: 0 0.6rem 1.2rem rgba(0, 0, 0, 0.2);
-}
+  &:active {
+    transform: translateY(0.1rem);
+    box-shadow: 0 0.6rem 1.2rem rgba($color-black, 0.2);
+  }
 
-.btn--white {
-  background-color: $color-white;
-  color: $color-grey-light;
-  padding: 1.4rem 3.2rem;
-  border-radius: 10rem;
-}
+  &--white {
+    background-color: $color-white;
+    color: $color-grey-light;
+    &::after {
+      background-color: $color-white;
+    }
+  }
 
-.btn::after {
-  content: "";
-  display: inline-block;
-  height: 100%;
-  width: 100%;
-  border-radius: 10rem;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  transition: transform 0.4s, opacity 0.4s;
-}
+  &::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: transform 0.4s, opacity 0.4s;
+  }
 
-.btn--white::after {
-  background-color: $color-white;
-}
-
-.btn:hover::after {
-  transform: scaleX(1.4) scaleY(1.6);
-  opacity: 0;
-}
-
-.btn--anim {
-  animation: moveInBottom 0.4s ease-out 0.6s;
-  animation-fill-mode: backwards;
+  &--anim {
+    animation: moveInBottom 0.4s ease-out 0.6s;
+    animation-fill-mode: backwards;
+  }
 }
