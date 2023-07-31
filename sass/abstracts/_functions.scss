@@ -1,0 +1,3 @@
+@function cal($num, $gut) {
+  @return calc((100% - #{$gut}*#{$gutter-horizontal}) / #{$num});
+}
