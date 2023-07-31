@@ -7,7 +7,6 @@
 }
 
 @mixin cols {
-  background-color: burlywood;
   float: left;
   &:not(:last-child) {
     margin-right: $gutter-horizontal;
