@@ -1,5 +1,5 @@
 .feature-box {
-  background-color: rgba($color-white, 0.75);
+  background-color: rgba($color-white, 0.8);
   font-size: 1.5rem;
   padding: 2.5rem 3rem;
   text-align: center;
@@ -25,8 +25,5 @@
 
   &:hover {
     transform: translateY(-1.5rem) scale(1.03);
-  }
-
-  &__text {
   }
 }
