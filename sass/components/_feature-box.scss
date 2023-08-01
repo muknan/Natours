@@ -1,0 +1,32 @@
+.feature-box {
+  background-color: rgba($color-white, 0.75);
+  font-size: 1.5rem;
+  padding: 2.5rem 3rem;
+  text-align: center;
+  border-radius: 2px;
+  box-shadow: 0 1.2rem 2.4rem rgba($color-black, 0.2);
+  transition: transform 0.3s;
+
+  &__icon {
+    font-size: 6rem;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+    background-image: linear-gradient(
+      to right,
+      $color-primary-light,
+      $color-primary-dark
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    // fix for icon getting cut off slightly from left-right side
+    letter-spacing: 1px;
+  }
+
+  &:hover {
+    transform: translateY(-1.5rem) scale(1.03);
+  }
+
+  &__text {
+  }
+}
