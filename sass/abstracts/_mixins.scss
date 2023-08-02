@@ -12,3 +12,11 @@
     margin-right: $gutter-horizontal;
   }
 }
+
+@mixin box-shadow-big {
+  box-shadow: 0 1.2rem 3.6rem rgba($color-black, 0.2);
+}
+
+@mixin box-shadow-medium {
+  box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
+}
