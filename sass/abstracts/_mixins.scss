@@ -14,9 +14,13 @@
 }
 
 @mixin box-shadow-big {
-  box-shadow: 0 1.2rem 3.6rem rgba($color-black, 0.2);
+  box-shadow: 0 1.5rem 4rem rgba($color-black, 0.25);
 }
 
 @mixin box-shadow-medium {
   box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
+}
+
+@mixin box-shadow-small {
+  box-shadow: 0 0.2rem 1.2rem rgba($color-black, 0.2);
 }
