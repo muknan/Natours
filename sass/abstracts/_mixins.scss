@@ -24,3 +24,7 @@
 @mixin box-shadow-small {
   box-shadow: 0 0.2rem 1.2rem rgba($color-black, 0.2);
 }
+
+@mixin text-shadow-small {
+  text-shadow: 0 0.6rem 1.4rem rgba($color-black, 0.5);
+}
