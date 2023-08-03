@@ -28,3 +28,10 @@
 @mixin text-shadow-small {
   text-shadow: 0 0.6rem 1.4rem rgba($color-black, 0.5);
 }
+
+@mixin center-element {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
