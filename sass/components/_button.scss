@@ -81,7 +81,7 @@
     border-bottom: 0.1rem solid $color-primary;
     display: inline-block;
     padding: 0.3rem;
-    transition: all 0.4s;
+    transition: all 0.2s;
     outline: none;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
@@ -90,14 +90,14 @@
   &:hover {
     // color: darken($color-primary-dark, 10%);
     // color: $color-white;
-    -webkit-text-stroke: 0.25px;
-    text-shadow: 0 0.4rem 0.4rem rgba($color-black, 0.15);
-    transform: translateY(-2px);
+    -webkit-text-stroke: 0.2px;
+    text-shadow: -1.4rem 0.5rem 2rem rgba($color-primary, 0.5);
+    transform: translateX(2px);
   }
 
   &:active {
-    text-shadow: 0 0.2rem 0.4rem rgba($color-black, 0.15);
+    text-shadow: 0 0.5rem 2rem rgba($color-primary, 0.25);
     -webkit-text-stroke: 0;
-    transform: translateY(0);
+    transform: translateX(0);
   }
 }

@@ -71,6 +71,8 @@
     position: absolute;
     left: 0rem;
     top: -0.4rem;
+    box-shadow: 0 1rem 3rem rgba($color-primary, 0);
+    transition: all 0.2s;
 
     &::after {
       content: "";
@@ -90,5 +92,9 @@
 
   &__radio-input:checked ~ &__radio-label &__radio-btn::after {
     opacity: 1;
+  }
+
+  &__radio-input:checked ~ &__radio-label &__radio-btn {
+    box-shadow: 0 0rem 1rem rgba($color-primary, 0.5);
   }
 }

@@ -61,7 +61,9 @@
           <span class="heading-primary--main">Outdoors</span>
           <span class="heading-primary--sub">is where life happens</span>
         </h1>
-        <a href="#" class="btn btn--white btn--anim">Discover our tours</a>
+        <a href="#section-tours" class="btn btn--white btn--anim"
+          >Discover our tours</a
+        >
       </div>
     </header>
 
@@ -167,7 +169,7 @@
         </div>
       </section>
 
-      <section class="section-tours">
+      <section class="section-tours" id="section-tours">
         <div class="u-center-text u-margin-bottom-big">
           <h2 class="heading-secondary">Most popular tours</h2>
         </div>
@@ -200,7 +202,7 @@
                     <p class="card__price-only">Only</p>
                     <p class="card__price-value u-margin-bottom-big">$297</p>
                   </div>
-                  <a href="" class="btn btn--white">Book now!</a>
+                  <a href="#popup" class="btn btn--white">Book now!</a>
                 </div>
               </div>
             </div>
@@ -235,7 +237,7 @@
                     <p class="card__price-only">Only</p>
                     <p class="card__price-value u-margin-bottom-big">$497</p>
                   </div>
-                  <a href="" class="btn btn--white">Book now!</a>
+                  <a href="#popup" class="btn btn--white">Book now!</a>
                 </div>
               </div>
             </div>
@@ -268,7 +270,7 @@
                     <p class="card__price-only">Only</p>
                     <p class="card__price-value u-margin-bottom-big">$897</p>
                   </div>
-                  <a href="" class="btn btn--white">Book now!</a>
+                  <a href="#popup" class="btn btn--white">Book now!</a>
                 </div>
               </div>
             </div>
@@ -449,11 +451,50 @@
           <p class="footer__copyright">
             Built as a <a href="" class="footer__link">Learning Project</a>. You
             can find my other projects at
-            <a href="#" class="footer__link">Github</a>.
+            <a
+              href="https://github.com/muknan"
+              class="footer__link"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Github</a
+            >.
           </p>
         </div>
       </div>
     </footer>
+
+    <div class="popup" id="popup">
+      <div class="popup__content">
+        <div class="popup__left">
+          <img src="img/nat-8.jpg" alt="Tour Photo" class="popup__img" />
+          <img src="img/nat-9.jpg" alt="Tour Photo" class="popup__img" />
+        </div>
+        <div class="popup__right">
+          <a href="#section-tours" class="popup__close">&times;</a>
+          <h2 class="heading-secondary u-margin-bottom-small">
+            Start booking now
+          </h2>
+          <h3 class="heading-tertiary u-margin-bottom-small">
+            Important &ndash; Read the terms and conditions before you proceed
+          </h3>
+          <p class="popup__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Augue ut
+            lectus arcu bibendum at. Dolor sit amet consectetur adipiscing elit
+            pellentesque habitant morbi tristique. Morbi tristique senectus et
+            netus. Amet purus gravida quis blandit turpis cursus in hac
+            habitasse. Facilisis volutpat est velit egestas dui. Morbi enim nunc
+            faucibus a. Volutpat maecenas volutpat blandit aliquam etiam erat
+            velit scelerisque. Scelerisque in dictum non consectetur a erat nam
+            at. Morbi tincidunt augue interdum velit euismod in pellentesque
+            massa. Libero volutpat sed cras ornare arcu dui vivamus. At auctor
+            urna nunc id cursus metus aliquam eleifend mi. Adipiscing elit duis
+            tristique sollicitudin nibh sit.
+          </p>
+          <a href="#" class="btn btn--green">Book now</a>
+        </div>
+      </div>
+    </div>
 
     <!-- 
     <section class="grid-test">
