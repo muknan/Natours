@@ -13,6 +13,8 @@ navEl.addEventListener("click", function () {
   uncheckBox();
 });
 
+const popEl = document.querySelector(".popup__close");
+
 ////////////////////////////////////////////////////////////
 //Implementing smooth scrolling animation
 const allLinks = document.querySelectorAll("a:link");
@@ -26,12 +28,18 @@ allLinks.forEach(function (link) {
       window.scrollTo({ top: 0, behavior: "smooth" });
     }
 
-    //Scroll to other links
-    if (href !== "#" && href.startsWith(!"#pop")) {
-      console.log("Test");
+    if (href !== "#popup" && href !== "#section-tours") {
       e.preventDefault();
       const sectionEl = document.querySelector(href);
       sectionEl.scrollIntoView({ behavior: "smooth" });
     }
+
+    //Scroll to other links
+    // if (href !== "#" && href.startsWith("#")) {
+    //   console.log("Test");
+    //   e.preventDefault();
+    //   const sectionEl = document.querySelector(href);
+    //   sectionEl.scrollIntoView({ behavior: "smooth" });
+    // }
   });
 });
