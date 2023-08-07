@@ -13,7 +13,25 @@ navEl.addEventListener("click", function () {
   uncheckBox();
 });
 
-const popEl = document.querySelector(".popup__close");
+// const popEl = document.querySelector(".popup__close");
+// const test = document.querySelector(".popup");
+// popEl.addEventListener("click", function () {
+//   test.style.cssText = `opacity: 0;
+//   visibility: hidden;`;
+
+//   const nextURL = "http://127.0.0.1:5500/#section-tours";
+//   // This will create a new entry in the browser's history, reloading afterwards
+
+//   window.location.href = nextURL;
+
+//   // This will replace the current entry in the browser's history, reloading afterwards
+//   window.location.assign(nextURL);
+
+//   // This will replace the current entry in the browser's history, reloading afterwards
+//   window.location.replace(nextURL);
+
+//   // location.reload(nextURL);
+// });
 
 ////////////////////////////////////////////////////////////
 //Implementing smooth scrolling animation
