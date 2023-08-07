@@ -10,6 +10,10 @@ html {
   //Defines what 1rem is = 10px
   font-size: 62.5%;
 
+  @include respond(compact-desktop) {
+    font-size: 59.375%;
+  }
+
   @include respond(tab-land) {
     font-size: 56.25%;
   }

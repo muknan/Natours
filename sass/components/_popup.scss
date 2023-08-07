@@ -10,6 +10,16 @@
   visibility: hidden;
   transition: all 0.3s;
 
+  @include respond(phone) {
+    .heading-secondary {
+      line-height: 1.4;
+    }
+
+    .heading-tertiary {
+      font-size: 1.4rem;
+    }
+  }
+
   &__content {
     width: 75%;
     background-color: $color-white;
@@ -21,11 +31,19 @@
     opacity: 0;
     transform: translate(-50%, -50%) scale(0.25);
     transition: all 0.5s 0.2s;
+
+    @include respond(tab-port) {
+      width: 80%;
+    }
   }
 
   &__left {
     width: 34%;
     display: table-cell;
+
+    @include respond(tab-port) {
+      display: none;
+    }
   }
 
   &__right {
@@ -38,6 +56,11 @@
   &__img {
     width: 100%;
     display: block;
+
+    @include respond(tab-land) {
+      height: 27rem;
+      object-fit: cover;
+    }
   }
 
   &__text {
@@ -56,6 +79,19 @@
     -ms-hyphens: auto;
     -webkit-hyphens: auto;
     hyphens: auto;
+
+    @include respond(tab-land) {
+      -moz-column-count: 1;
+      column-count: 1;
+    }
+
+    @include respond(tab-port) {
+      margin-bottom: 3.5rem;
+    }
+
+    @include respond(phone) {
+      margin-bottom: 3rem;
+    }
   }
 
   // Open states
@@ -82,9 +118,14 @@
       position: absolute;
       top: 2rem;
       right: 2.5rem;
-      font-size: 3rem;
+      font-size: 4rem;
       display: inline-block;
       line-height: 1;
+
+      @include respond(phone) {
+        top: 1rem;
+        right: 2rem;
+      }
     }
 
     &:hover {

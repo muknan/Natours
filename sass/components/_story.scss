@@ -11,19 +11,32 @@
   -webkit-transition: all 0.4s ease-in;
   transition: all 0.4s ease-in;
 
+  @include respond(tab-port) {
+    width: 100%;
+    transform: none;
+    padding: 4rem;
+    padding-left: 6rem;
+  }
+
   &__shape {
     height: 15rem;
     width: 15rem;
     float: left;
     // border-radius: 50%;
-    -webkit-shape-outside: circle(50% at 50% 50%);
-    shape-outside: circle(50% at 50% 50%);
+    -webkit-shape-outside: circle(40% at 60% 50%);
+    shape-outside: circle(40% at 60% 50%);
 
     -webkit-clip-path: circle(50% at 50% 50%);
     clip-path: circle(50% at 50% 50%);
 
     transform: translateX(-3rem) skewX(12deg);
     position: relative;
+
+    @include respond(tab-port) {
+      height: 12rem;
+      width: 10rem;
+      transform: translateX(-2rem);
+    }
   }
 
   &__image {
@@ -33,10 +46,17 @@
     backface-visibility: hidden;
     -webkit-transition: all 0.4s;
     transition: all 0.4s;
+
+    @include respond(tab-port) {
+      // transform: none;
+    }
   }
 
   &__text {
     transform: skewX(12deg);
+    @include respond(tab-port) {
+      transform: none;
+    }
   }
 
   &__caption {

@@ -17,6 +17,10 @@
     overflow: hidden;
     box-shadow: 0 1.2rem 3.6rem rgba($color-black, 0.15);
 
+    &--front {
+      background-color: $color-white;
+    }
+
     &--back {
       transform: rotateY(180deg);
 
@@ -162,6 +166,7 @@
   &__price-box {
     text-align: center;
     color: $color-white;
+    margin-bottom: 8rem;
   }
 
   &__price-only {
@@ -172,5 +177,62 @@
   &__price-value {
     font-size: 6rem;
     font-weight: 100;
+  }
+
+  /*********************
+  ----- MEDIA QUERY----- 
+  *********************/
+
+  @include respond(tab-port) {
+    height: auto;
+    border-radius: 3px;
+    background-color: $color-white;
+    @include box-shadow-big;
+
+    &__side {
+      height: auto;
+      position: relative;
+      box-shadow: none;
+
+      &--back {
+        transform: none;
+        clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+      }
+    }
+
+    &:hover &__side--front {
+      transform: none;
+    }
+
+    &:hover &__side--back {
+      transform: none;
+    }
+
+    &__details {
+      padding: 1rem 3rem;
+    }
+
+    &__heading {
+      width: 60%;
+    }
+
+    // Back side styling
+    &__cta {
+      position: relative;
+      top: 0;
+      left: 0;
+      transform: none;
+      text-align: center;
+      padding: 6rem 4rem 4rem;
+    }
+
+    &__price-box {
+      margin-bottom: 3rem;
+    }
+
+    &__price-value {
+      font-size: 5rem;
+      font-weight: 300;
+    }
   }
 }
