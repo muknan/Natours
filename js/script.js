@@ -7,10 +7,12 @@ function uncheckBox() {
   }
 }
 
-const navEl = document.querySelector(".navigation__list");
+const navEl = document.querySelectorAll(".navigation__item");
 
-navEl.addEventListener("click", function () {
-  uncheckBox();
+navEl.forEach(function (item) {
+  item.addEventListener("click", function () {
+    uncheckBox();
+  });
 });
 
 // const popEl = document.querySelector(".popup__close");

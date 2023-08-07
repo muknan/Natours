@@ -434,7 +434,7 @@ body {
         .composition__photo--p2 {
           top: -1rem;
           transform: scale(1.2);
-          z-index: 100; } }
+          z-index: 12; } }
     .composition__photo--p3 {
       left: 12rem;
       top: 10rem; }
@@ -452,7 +452,7 @@ body {
         .composition__photo:hover {
           outline: 0.6rem solid #55c57a;
           transform: scale(1.2) translateY(-0.5rem);
-          z-index: 101;
+          z-index: 21;
           box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.3); } }
   .composition:hover .composition__photo:not(:hover) {
     transform: scale(95%); }
@@ -865,7 +865,7 @@ body {
   top: 6rem;
   right: 6rem;
   border-radius: 50%;
-  z-index: 102;
+  z-index: 502;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
   text-align: center;
   cursor: pointer; }
@@ -886,7 +886,7 @@ body {
   top: 6.5rem;
   right: 6.5rem;
   background-image: radial-gradient(#7ed56f, #28b485);
-  z-index: 100;
+  z-index: 500;
   transition: transform 0.8s cubic-bezier(0.83, 0, 0.17, 1); }
   @media (max-width: 56.25em) {
     .navigation__bg {
@@ -903,7 +903,7 @@ body {
   position: fixed;
   top: 0;
   left: -50rem;
-  z-index: 101;
+  z-index: 501;
   opacity: 0;
   width: 0;
   transition: all 0.8s cubic-bezier(0.68, -0.6, 0.32, 1.6); }
