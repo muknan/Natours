@@ -316,7 +316,8 @@ body {
     height: 23rem;
     background-blend-mode: screen;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    overflow: hidden; }
     .card__image--1 {
       background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(../img/nat-5.jpg); }
     .card__image--2 {
@@ -382,7 +383,8 @@ body {
         box-shadow: none; }
         .card__side--back {
           transform: none;
-          clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%); }
+          clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+          overflow: hidden; }
       .card:hover .card__side--front {
         transform: none; }
       .card:hover .card__side--back {
@@ -600,6 +602,7 @@ body {
     shape-outside: circle(40% at 60% 50%);
     -webkit-clip-path: circle(50% at 50% 50%);
     clip-path: circle(50% at 50% 50%);
+    overflow: hidden;
     transform: translateX(-3rem) skewX(12deg);
     position: relative; }
     @media (max-width: 56.25em) {
@@ -787,7 +790,8 @@ body {
   background-position: top;
   position: relative;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  overflow: hidden; }
   @media (max-width: 37.5em) {
     .header {
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);

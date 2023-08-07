@@ -28,6 +28,7 @@
 
     -webkit-clip-path: circle(50% at 50% 50%);
     clip-path: circle(50% at 50% 50%);
+    overflow: hidden;
 
     transform: translateX(-3rem) skewX(12deg);
     position: relative;
