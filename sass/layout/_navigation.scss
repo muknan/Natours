@@ -11,7 +11,7 @@
     top: 6rem;
     right: 6rem;
     border-radius: 50%;
-    z-index: 102;
+    z-index: 502;
 
     @include box-shadow-medium;
     text-align: center;
@@ -39,7 +39,7 @@
       $color-primary-light,
       $color-primary-dark
     );
-    z-index: 100;
+    z-index: 500;
     transition: transform 0.8s cubic-bezier(0.83, 0, 0.17, 1);
 
     @include respond(tab-port) {
@@ -59,7 +59,7 @@
     position: fixed;
     top: 0;
     left: -50rem;
-    z-index: 101;
+    z-index: 501;
 
     opacity: 0;
     width: 0;
