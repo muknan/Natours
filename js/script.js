@@ -46,7 +46,12 @@ allLinks.forEach(function (link) {
       window.scrollTo({ top: 0, behavior: "smooth" });
     }
 
-    if (href !== "#popup" && href !== "#section-tours") {
+    if (
+      href !== "#popup" &&
+      href !== "#section-tours" &&
+      href.startsWith("!mail") &&
+      href.startsWith("!tel")
+    ) {
       e.preventDefault();
       const sectionEl = document.querySelector(href);
       sectionEl.scrollIntoView({ behavior: "smooth" });
