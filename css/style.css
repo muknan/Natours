@@ -26,7 +26,8 @@ ORDER: Base + typography > general layout + grid > page layout > components
   box-sizing: inherit; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
   @media (max-width: 88em) {
     html {
       font-size: 59.375%; } }
@@ -651,7 +652,7 @@ body {
   width: 100%;
   top: 0;
   left: 0;
-  z-index: 105;
+  z-index: 605;
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s; }

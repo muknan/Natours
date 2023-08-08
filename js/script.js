@@ -7,8 +7,27 @@ function uncheckBox() {
   }
 }
 
-const navEl = document.querySelectorAll(".navigation__item");
+// Popup close on clicking grey area
+const popEl = document.querySelector(".popup");
+const popConEl = document.querySelector(".popup__content");
 
+popEl.addEventListener(
+  "click",
+  function () {
+    document.querySelector(".popup__close").click();
+  },
+  false
+);
+popConEl.addEventListener(
+  "click",
+  function (ev) {
+    ev.stopPropagation();
+  },
+  false
+);
+
+// Navigation close on selecting an item from list
+const navEl = document.querySelectorAll(".navigation__item");
 navEl.forEach(function (item) {
   item.addEventListener("click", function () {
     uncheckBox();
@@ -49,22 +68,14 @@ allLinks.forEach(function (link) {
     }
 
     if (
-      href !== "#popup" &&
-      href !== "#section-tours" &&
-      href.startsWith("!mail") &&
-      href.startsWith("!tel")
+      href !== "#" &&
+      href.startsWith("#section") &&
+      !href.endsWith("tours") &&
+      !href.endsWith("book")
     ) {
       e.preventDefault();
       const sectionEl = document.querySelector(href);
       sectionEl.scrollIntoView({ behavior: "smooth" });
     }
-
-    //Scroll to other links
-    // if (href !== "#" && href.startsWith("#")) {
-    //   console.log("Test");
-    //   e.preventDefault();
-    //   const sectionEl = document.querySelector(href);
-    //   sectionEl.scrollIntoView({ behavior: "smooth" });
-    // }
   });
 });
