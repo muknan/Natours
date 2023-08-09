@@ -30,19 +30,19 @@
     clip-path: circle(50% at 50% 50%);
     overflow: hidden;
 
-    transform: translateX(-3rem) skewX(12deg);
+    transform: translateX(-2.5rem) skewX(12deg);
     position: relative;
 
     @include respond(tab-port) {
-      height: 12rem;
+      height: 10rem;
       width: 10rem;
-      transform: translateX(-2rem);
+      transform: translateX(-1rem) translateY(-0.5rem);
     }
   }
 
   &__image {
     height: 100%;
-    transform: translateX(-4rem) scale(1.2);
+    transform: translateX(-2.5rem) scale(1.2);
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     -webkit-transition: all 0.4s;
@@ -82,7 +82,7 @@
   }
 
   &:hover &__image {
-    transform: translateX(-4rem) scale(1);
+    transform: translateX(-2.5rem) scale(1);
     -webkit-filter: blur(2.5px) brightness(85%);
     filter: blur(2.5px) brightness(85%);
   }
