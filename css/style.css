@@ -664,7 +664,7 @@ body {
   z-index: 605;
   opacity: 0;
   visibility: hidden;
-  transition: all 0.3s; }
+  transition: transform 0.5s, opacity 0.5s, visibility 0.5s, backdrop-filter 0.5s; }
   @supports (-webkit-backdrop-filter: blur(1rem)) or (backdrop-filter: blur(1rem)) {
     .popup {
       background-color: rgba(0, 0, 0, 0.3);
@@ -692,7 +692,7 @@ body {
     overflow: hidden;
     opacity: 0;
     transform: translate(-50%, -50%) scale(0);
-    transition: transform 0.5s 0.2s, background-color 0.5s 0.2s, visibility 0.5s 0.2s, opacity 0.5s 0.2s; }
+    transition: transform 0.5s 0.2s, opacity 0.5s 0.2s; }
     @media (max-width: 56.25em) {
       .popup__content {
         width: 80%; } }
@@ -744,8 +744,7 @@ body {
     opacity: 1;
     transform: translate(-50%, -50%) scale(1); }
   .popup:not(:target) {
-    backdrop-filter: none;
-    background-color: none;
+    backdrop-filter: blur(0);
     opacity: 1; }
   .popup__close:link, .popup__close:visited {
     text-decoration: none;
