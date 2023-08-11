@@ -692,7 +692,7 @@ body {
     overflow: hidden;
     opacity: 0;
     transform: translate(-50%, -50%) scale(0);
-    transition: transform 0.5s 0.2s, opacity 0.5s 0.2s; }
+    transition: transform 0.5s 0.2s, opacity 0.5s 0.2s, background-color 0.5s 0.2s, visibility 0.5s 0.2s; }
     @media (max-width: 56.25em) {
       .popup__content {
         width: 80%; } }
@@ -745,7 +745,8 @@ body {
     transform: translate(-50%, -50%) scale(1); }
   .popup:not(:target) {
     backdrop-filter: none;
-    opacity: 1; }
+    opacity: 1;
+    background-color: transparent; }
   .popup__close:link, .popup__close:visited {
     text-decoration: none;
     color: #777;
@@ -1011,8 +1012,8 @@ body {
   transform: rotate(-315deg); }
 
 [class^="section-"] {
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden; }
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden; }
 
 .section-about {
   background-color: #f7f7f7;
@@ -1024,6 +1025,7 @@ body {
 
 .section-features {
   z-index: 21;
+  position: relative;
   margin-top: -10rem;
   padding: 20rem 0;
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/nat-4.jpg);
@@ -1033,7 +1035,8 @@ body {
     transform: skewY(7deg); }
   @media (max-width: 56.25em) {
     .section-features {
-      padding: 10rem 0; } }
+      padding: 10rem 0;
+      padding-bottom: 50rem; } }
   @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
     .section-features {
       background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/nat-4-large.jpg); } }
