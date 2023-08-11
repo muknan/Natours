@@ -1,9 +1,3 @@
-// document.querySelector(
-//   ".header"
-// ).style.cssText = `-webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-// clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-// overflow: hidden;`;
-
 //Make mobile navigation work
 const btnNavEl = document.querySelector(".navigation__checkbox");
 
@@ -14,7 +8,6 @@ function uncheckBox() {
 }
 
 // Popup close on clicking grey area
-
 const popParentEl = document.querySelector(".popup");
 const popConEl = document.querySelector(".popup__content");
 
@@ -41,26 +34,6 @@ navEl.forEach(function (item) {
     uncheckBox();
   });
 });
-
-// const popEl = document.querySelector(".popup__close");
-// const test = document.querySelector(".popup");
-// popEl.addEventListener("click", function () {
-//   test.style.cssText = `opacity: 0;
-//   visibility: hidden;`;
-
-//   const nextURL = "http://127.0.0.1:5500/#section-tours";
-//   // This will create a new entry in the browser's history, reloading afterwards
-
-//   window.location.href = nextURL;
-
-//   // This will replace the current entry in the browser's history, reloading afterwards
-//   window.location.assign(nextURL);
-
-//   // This will replace the current entry in the browser's history, reloading afterwards
-//   window.location.replace(nextURL);
-
-//   // location.reload(nextURL);
-// });
 
 ////////////////////////////////////////////////////////////
 //Implementing smooth scrolling animation
