@@ -16,6 +16,7 @@ popParentEl.addEventListener(
   "click",
   function () {
     document.querySelector(".popup__close").click();
+    document.querySelector("body").style = "backdrop-filter: none;";
   },
   false
 );
