@@ -7,7 +7,7 @@
   z-index: 605;
   opacity: 0;
   visibility: hidden;
-  transition: all 0.5s;
+  transition: all 0.5s, backdrop-filter 1ms;
 
   @supports (-webkit-backdrop-filter: blur(1rem)) or
     (backdrop-filter: blur(1rem)) {
@@ -40,7 +40,7 @@
     overflow: hidden;
     opacity: 0;
     transform: translate(-50%, -50%) scale(0);
-    transition: transform 0.5s 0.2s, opacity 0.5s 0.2s;
+    transition: all 0.5s, backdrop-filter 1ms;
 
     @include respond(tab-port) {
       width: 80%;
@@ -117,7 +117,7 @@
 
   &:not(:target) {
     backdrop-filter: none;
-    background-color: none;
+    // background-color: none;
     opacity: 1;
   }
 
