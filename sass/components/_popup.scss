@@ -11,6 +11,7 @@
 
   @supports (backdrop-filter: blur(10px)) {
     background-color: rgba($color-black, 0.3);
+    -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
   }
 
@@ -110,6 +111,7 @@
   }
 
   &:not(:target) {
+    -webkit-backdrop-filter: blur(0px);
     backdrop-filter: blur(0px);
     background-color: transparent;
     opacity: 1;
