@@ -8,16 +8,18 @@ function uncheckBox() {
 }
 
 // Popup close on clicking grey area
-const popEl = document.querySelector(".popup");
+
+const popParentEl = document.querySelector(".popup");
 const popConEl = document.querySelector(".popup__content");
 
-popEl.addEventListener(
+popParentEl.addEventListener(
   "click",
   function () {
     document.querySelector(".popup__close").click();
   },
   false
 );
+
 popConEl.addEventListener(
   "click",
   function (ev) {
