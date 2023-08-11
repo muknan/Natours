@@ -1,8 +1,8 @@
-document.querySelector(
-  ".header"
-).style.cssText = `-webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-overflow: hidden;`;
+// document.querySelector(
+//   ".header"
+// ).style.cssText = `-webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+// clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+// overflow: hidden;`;
 
 //Make mobile navigation work
 const btnNavEl = document.querySelector(".navigation__checkbox");
@@ -22,7 +22,6 @@ popParentEl.addEventListener(
   "click",
   function () {
     document.querySelector(".popup__close").click();
-    document.querySelector("body").style = "backdrop-filter: none;";
   },
   false
 );
