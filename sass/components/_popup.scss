@@ -40,7 +40,8 @@
     overflow: hidden;
     opacity: 0;
     transform: translate(-50%, -50%) scale(0);
-    transition: transform 0.5s 0.2s, opacity 0.5s 0.2s;
+    transition: transform 0.5s 0.2s, background-color 0.5s 0.2s,
+      visibility 0.5s 0.2s, opacity 0.5s 0.2s;
 
     @include respond(tab-port) {
       width: 80%;
@@ -119,7 +120,6 @@
     backdrop-filter: none;
     background-color: none;
     opacity: 1;
-    // background-color: transparent;
   }
 
   &__close {

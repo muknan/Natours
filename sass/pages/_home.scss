@@ -31,7 +31,6 @@
   }
   @include respond(tab-port) {
     padding: 10rem 0;
-    padding-bottom: 50rem;
   }
 
   @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
