@@ -114,6 +114,7 @@
   &:not(:target) {
     opacity: 1;
     background-color: transparent;
+    backdrop-filter: blur(0);
   }
 
   &__close {
