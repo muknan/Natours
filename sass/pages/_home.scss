@@ -1,6 +1,6 @@
 [class^="section-"] {
-  backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 .section-about {
@@ -14,6 +14,7 @@
 
 .section-features {
   z-index: 21;
+  position: relative;
   margin-top: -10rem;
   padding: 20rem 0;
   background-image: linear-gradient(
