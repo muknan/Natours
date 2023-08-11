@@ -117,7 +117,7 @@
 
   &:not(:target) {
     backdrop-filter: none;
-    // background-color: transparent;
+    background-color: none;
     opacity: 1;
   }
 

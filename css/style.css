@@ -745,6 +745,7 @@ body {
     transform: translate(-50%, -50%) scale(1); }
   .popup:not(:target) {
     backdrop-filter: none;
+    background-color: none;
     opacity: 1; }
   .popup__close:link, .popup__close:visited {
     text-decoration: none;
@@ -804,7 +805,7 @@ body {
 
 .header {
   z-index: 20;
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero-small.jpg);
+  background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.8), rgba(86, 67, 250, 0.8)), url(../img/hero-small.jpg);
   height: 95vh;
   background-size: cover;
   background-position: top;
@@ -814,7 +815,7 @@ body {
   overflow: hidden; }
   @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
     .header {
-      background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero.jpg); } }
+      background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.8), rgba(86, 67, 250, 0.8)), url(../img/hero.jpg); } }
   @media (max-width: 37.5em) {
     .header {
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
